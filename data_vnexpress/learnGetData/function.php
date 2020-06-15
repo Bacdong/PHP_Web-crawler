@@ -14,7 +14,7 @@
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
 
-        // // proxy
+        // proxy
         if (checkProxyLive($proxy)) {
             if (isset($proxy)) {
                 curl_setopt($ch, CURLOPT_PROXY, $proxy);
